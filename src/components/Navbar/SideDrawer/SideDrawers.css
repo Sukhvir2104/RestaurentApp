@@ -1,0 +1,110 @@
+.SideDrawers {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    width: 100%;
+    display: none;
+    grid-template-rows: max-content;
+    border-top: 1px solid var(--color-white);
+    align-content: center; 
+}
+
+@media screen and (max-width: 650px) {
+    .SideDrawers {
+      display: grid;;
+    }
+  }
+
+.ButtonContainer {
+    background: var(--color-primary);
+    width: 100%;
+    height: 10rem;
+    grid-row: 1 / 2;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+}
+
+.Button {
+    height: 4rem;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1.2rem;
+    z-index: 20;
+
+    position: fixed;
+    top: 3rem;
+
+
+}
+
+.ButtonSpan {
+    height: 3px;
+    width: 100%;
+    background: var(--color-white);
+    transition: all .2s ease-out;
+}
+
+
+.List {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    z-index: 4;
+    top: 10rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    transform: translateX(-100%);
+    transition: all .6s ease-out;
+}
+
+.Open {
+    transform: translateX(0)
+}
+
+
+
+.Link {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.SpanTop {
+    transform: rotate(135deg) translateY(-2.1rem) translateX(1px);
+    width: 80%;
+}
+
+.SpanMid {
+    
+    background: transparent;
+}
+
+.SpanBottom {
+    transform: rotate(-135deg) translateY(1.7rem) translateX(-2px);
+    width: 80%;
+}
+
+.TitleContainer {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5rem;
+}
+
+.Subtitle {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}

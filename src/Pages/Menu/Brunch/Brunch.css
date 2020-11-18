@@ -1,0 +1,16 @@
+.MenuSection {
+    grid-column: 2 / 3;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width: 1222px) {
+    .MenuSection {
+        margin-bottom: 0rem;
+    }
+}

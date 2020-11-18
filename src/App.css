@@ -1,0 +1,59 @@
+:root {
+
+  /* FONT */
+  --defaultFont: 'Montserrat', sans-serif;
+
+  /* COLOR */ 
+  --color-white : #fff;
+  --color-primary: #3a3665;
+  --color-secondary: #7874ca;
+  --color-grey: #989084;
+  
+
+
+  /* SHADOW */
+
+  --shadow: 0 1rem .5rem rgba(#080808, .9);
+
+
+  /* GRID */
+
+  --gutter--xs: 1rem;
+  --gutter--sm: 2rem;
+  --gutter--md: 4rem;
+  --gutter--lg: 6rem;
+  --gutter--xlg: 8rem;
+  
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  box-sizing: border-box;
+  font-family: var(--defaultFont);
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+}

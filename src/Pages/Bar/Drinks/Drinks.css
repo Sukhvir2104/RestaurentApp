@@ -1,0 +1,31 @@
+.MenuSection {
+    grid-column: 2 / 3;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 1222px) {
+    .MenuSection {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:834px) {
+    .MenuSection {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 562px) {
+    .MenuSection {
+        grid-column: 1 / -1;
+        width: 100%;
+     
+
+    }
+}
